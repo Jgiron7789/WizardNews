@@ -6,7 +6,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/" , (req, res) => {
 
   const posts = postBank.list();
   const html = `
